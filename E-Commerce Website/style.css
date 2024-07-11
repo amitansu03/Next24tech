@@ -1,0 +1,499 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: "Lato", sans-serif;
+    padding: 0;
+    margin: 0;
+  } 
+
+  /*styles for the navigation section*/
+  nav {
+    background-color: black;
+    color: white;
+    padding: 20px 50px;
+  }
+  
+  .navTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /*styles for the search bar*/
+  .search {
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  
+  .searchInput {
+    border: none;
+    background-color: transparent;
+  }
+  
+  .searchInput::placeholder {
+    color: lightgray;
+  }
+  
+  /*styles for limited offer*/
+  .limitedOffer {
+    font-size: 20px;
+    border-bottom: 2px solid green;
+    cursor: pointer;
+  }
+  
+  /*styles for the bottom navigation menu*/
+  .navBottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .menuItem {
+    margin-right: 50px;
+    cursor: pointer;
+    color: gray;
+    font-weight: 400;
+  }
+
+  /*styles for the slider section*/
+.slider{
+    background: url("https://images.pexels.com/photos/129731/pexels-photo-129731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    clip-path: polygon(0 0, 93% 5%, 99% 93%, 0 100%);
+    overflow: hidden;
+}
+
+.sliderWrapper {
+    display: flex;
+    width: 500vw;
+    transition: all 1.5s ease-in-out;
+  }
+  
+  .sliderItem {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  /*styles for slider elements (image, title, price, button)*/
+  .sliderBg {
+    width: 750px;
+    height: 750px;
+    border-radius: 50%;
+    position: absolute;
+  }
+  
+  .sliderImg {
+    z-index: 1;
+  }
+  
+  .sliderTitle {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+    z-index: 1;
+  }
+  
+  .sliderPrice {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    border: 1px solid gray;
+    z-index: 1;
+    background: rgb(73, 70, 70);
+  }
+  
+  .buyButton {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+    border: 1px solid blue;
+    background-color: black;
+    z-index: 1;
+    cursor: pointer;
+  }
+  
+  /*hover styles for the Buy Now button*/
+  .buyButton:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  /*background and price color for each slider item*/
+  .sliderItem:nth-child(1) .sliderBg {
+    background-color: rgb(222, 197, 197);
+  }
+  .sliderItem:nth-child(2) .sliderBg {
+    background-color:  rgb(222, 197, 197);
+  }
+  .sliderItem:nth-child(3) .sliderBg {
+    background-color:  rgb(222, 197, 197);
+  }
+  .sliderItem:nth-child(4) .sliderBg {
+    background-color:  rgb(222, 197, 197);
+  }
+  .sliderItem:nth-child(5) .sliderBg {
+    background-color:  rgb(222, 197, 197);
+  }
+
+  
+  .sliderItem:nth-child(1) .sliderPrice {
+    color:  rgb(222, 197, 197);
+  }
+  .sliderItem:nth-child(2) .sliderPrice {
+    color:  rgb(222, 197, 197);
+  }
+  .sliderItem:nth-child(3) .sliderPrice {
+    color:  rgb(222, 197, 197);
+  }
+  .sliderItem:nth-child(4) .sliderPrice {
+    color:  rgb(222, 197, 197);
+  }
+  .sliderItem:nth-child(5) .sliderPrice {
+    color:  rgb(222, 197, 197);
+  }
+  
+  /*styles for the features section*/
+  .features {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+  }
+  
+  .feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .featureIcon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .featureTitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px;
+  }
+  
+  .featureDesc {
+    color: gray;
+    width: 50%;
+    height: 100px;
+  }
+
+  /*styles for the product section*/
+  .product{
+    height: 100vh;
+    background-color: whitesmoke;
+    position: relative;
+    clip-path: polygon(0 1%, 93% 8%, 100% 100%, 0 95%);
+  }
+
+  /*styles for product image and details*/
+  .productImg{
+    width: 50%;
+  }
+
+
+  .productDetails{
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 40%;
+    padding: 50px;
+  }
+
+  .productTitle{
+    font-size: 75px;
+    font-weight: 900;
+  }
+
+  .productDesc{
+    font-style: 25px;
+    color: gray;
+  }
+
+  /*styles for color and size options*/
+  .colors,.sizes{
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  .color{
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    background-color: black;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  .color:last-child{
+    background-color: darkblue;
+  }
+
+  .size{
+    padding: 5px 20px;
+    border: 1px solid black;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  /*styles for the Buy Now button*/
+  .productButton{
+    float: right;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  /*hover styles for the Buy Now button*/
+  .productButton:hover{
+    background-color: white;
+    color: black;
+  }
+  
+  /*styles for the image gallery section*/
+  .gallery{
+    padding: 50px;
+    display: flex;
+  }
+
+  .galleryItem{
+    flex:1;
+    padding: 50px;
+  }
+
+  .galleryImg{
+    width: 100%;
+  }
+
+  /*styles for the new season section*/
+  .newSeason{
+    display: flex;
+  }
+
+  .nsItem{
+    flex:1;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .nsImg{
+    width: 100%;
+    height: 500px;
+  }
+
+  .nsTitle{
+    font-size: 40px;
+  }
+
+  .nsButton{
+    padding: 15px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  /*styles for the footer section*/
+  footer{
+    display: flex;
+  }
+
+  .footerLeft{
+    flex:2;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+  }
+
+  .fMenuTitle{
+    font-size: 20px;
+  }
+
+ .fMenuList{
+  padding: 0;
+  list-style: none;
+ }
+
+ .fListItem{
+  margin-bottom: 10px;
+  color: gray;
+  cursor: pointer;
+ }
+
+  .footerRight{
+    flex:1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  /*input and button styles for the footer*/
+  .fInput{
+    padding: 5px;
+  }
+
+  .fButton{
+    padding: 5px;
+    background-color: black;
+    color: white;
+  }
+
+  /*styles for social media icons*/
+  .fIcons{
+    display: flex;
+  }
+
+  .fIcon{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+
+  /*styles for copyright information*/
+  .copyright{
+    font-weight: 300;
+    font-size: 15px;
+  }
+
+
+  /*media query for small screens*/
+  @media screen and (max-width:450px) {
+    nav{
+      padding: 20px;
+    }
+
+    .search{
+      display: none;
+    }
+
+    .navBottom{
+      flex-wrap: wrap;
+    }
+
+    .menuItem{
+      margin: 20px;
+      font-weight: 700;
+      font-size: 20px;
+    }
+
+    .slider{
+      clip-path: none;
+    }
+
+    .sliderImg{
+      width: 90%;
+    }
+
+    .sliderBg{
+      width: 100%;
+      height: 100%;
+    }
+
+    .sliderTitle{
+      display: none;
+    }
+
+    .sliderPrice{
+      top: unset;
+      bottom: 0;
+      left: 0;
+      font-size: 25px;
+      background-color: rgb(38, 36, 36);
+    }
+
+    .buyButton{
+      right: 0;
+      top: 0;
+    }
+
+    .features{
+      flex-direction: column;
+    }
+
+    .product{
+      clip-path: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .productImg{
+      width: 80%;
+    }
+
+    .productDetails{
+      width: 100%;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      top: 0;
+    }
+
+    .productTitle{
+      font-size: 50px;
+      margin: 0;
+    }
+
+    .gallery{
+      display: none;
+    }
+
+    .newSeason{
+      flex-direction: column;
+    }
+
+    .nsItem:nth-child(2){
+      padding: 50px;
+    }
+
+    footer{
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footerLeft{
+      padding: 20px;
+      width: 90%;
+    }
+
+    .footerRight{
+      padding: 20px;
+      width: 90%;
+      align-items: center;
+      background-color: whitesmoke;
+    }
+  }
